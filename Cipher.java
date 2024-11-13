@@ -15,6 +15,7 @@ import java.util.Scanner;
  * once the number is even or odd determined, we use if condition to determine which cipher we use
  * if the number is odd, it will use reverse cipher function to encryption and decryption
  * if the number is even, it will use substitution function to encryption and decryption
+ * @param
  */
 public class Cipher {
 
@@ -48,6 +49,11 @@ public class Cipher {
         scanner.close();
     }
 
+    /**
+     *
+     * @param plaintext the text to be encrypted for the function
+     * @return the encrypted string
+     */
     // method , return encrypt String.
     // need to use static because so can it can be use for reference from static context.
     public static String encrypt(String plaintext) {
@@ -63,6 +69,12 @@ public class Cipher {
         return encryptedText.toString();
     }
 
+    /**
+     *
+     * @param ciphertext the text to be encrypted for the function
+     *
+     * @return the encrypted string
+     */
     public static String decrypt(String ciphertext) {
         StringBuilder decryptedText = new StringBuilder();
 
