@@ -1,6 +1,21 @@
+/** Project: Solo lab 5 (cipher)
+ * Purpose Details: Cipher created by students and presented
+ * Course: IST242
+ * Author: Ryan Zheng
+ * Date Developed: 10/30/24
+ * Last Date Changed: 11/11/24
+ * Rev: 1
+ */
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * this  class cipher where we use two basic cipher,
+ * at first we ask user to enter number. once we determine the number is even or odd.
+ * once the number is even or odd determined, we use if condition to determine which cipher we use
+ * if the number is odd, it will use reverse cipher function to encryption and decryption
+ * if the number is even, it will use substitution function to encryption and decryption
+ */
 public class Cipher {
 
     public static void main(String[] args) {
@@ -14,7 +29,10 @@ public class Cipher {
         System.out.print("Enter plaintext: ");
         // plaintext is the String that pulls out what's inside of scanner line
         String plaintext = scanner.nextLine();
-
+        /**
+         * in here we use if statement to see if the number is even or odd.
+         * once we know even or odd, it will use condition to run the cipher method.
+         */
         String result;
         if (number % 2 == 0) {
             result = convertto(plaintext);
