@@ -5,6 +5,7 @@
  * Date Developed: 10/30/24
  * Last Date Changed: 11/13/24
  * Rev: 2
+ * reverse cipher and substitution cipher
  */
 import java.util.HashMap;
 import java.util.Scanner;
